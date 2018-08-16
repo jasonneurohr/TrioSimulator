@@ -1,0 +1,6 @@
+﻿# Certificates
+*.pfx
+
+# Build results
+[Oo]bj
+[Bb]in
