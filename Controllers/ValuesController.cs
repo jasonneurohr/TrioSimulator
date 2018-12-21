@@ -73,6 +73,23 @@ namespace TrioSimulator.Controllers
             return Ok(lineInfoModel);
         }
 
+        [HttpGet("api/v1/webcallcontrol/callstatus")]
+        public IActionResult CallStatus()
+        {
+            CallStatusDataModel callStatusDataModel = new CallStatusDataModel();
+            callStatusDataModel.LineId = "1";
+            callStatusDataModel.RemotePartyName = "tel:1234";
+            callStatusDataModel.Type = "Outgoing";
+            callStatusDataModel.Protocol = "Sip";
+            callStatusDataModel.CallState = "Connected";
+            callStatusDataModel.RemotePartyNumber = "tel:1234";
+            callStatusDataModel.DurationInSeconds = "45";
+
+            CallStatusModel callStatusModel = new CallStatusModel();
+            callStatusModel.data = callStatusDataModel;
+            callStatusModel.Status = "2000";
+        }
+
         [HttpGet("")]
         public IActionResult Default()
         {

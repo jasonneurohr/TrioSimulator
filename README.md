@@ -20,7 +20,7 @@ Update the appsettings.json with the certificate name and password
 
 ### JSON TXT Response
 
-Calls to /api/v1/mgmt/device/info will looks for **response.txt** in the same directory as the TrioSimulator.dll. Make sure this file exists and contains a valid JSON response. See the API section. There is an alternative return path which will return a hardcoded object commented out in the ValueController.cs, adjust this if desired.
+Calls to /api/v1/mgmt/device/info will look for **response.txt** in the same directory as the TrioSimulator.dll. Make sure this file exists and contains a valid JSON response. See the API section. There is an alternative return path which will return a hardcoded object commented out in the ValueController.cs, adjust this if desired.
 
 ### Run
 
